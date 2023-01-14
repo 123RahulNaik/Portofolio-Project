@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/582ed4e074.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navlink">
+                <i class="fa-sharp fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="blog.html">CONTACT US</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <!-- <li><a href="contact.html">CONTACT</a></li> -->
+                 </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & online programs</h1>
+    </section>
+
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="img/certificate.jpg" alt="">
+            <h2>Our Certificate course & Programs
+            We understand that every student has different needs and capabilities, 
+                which is why we create such a wonderful and unique curriculum that is the best fit for every student.</h2>
+            <br>
+            <h2>Know about Coachers</h2>
+            <p>Coachers is India's top online ed-tech platform that provides affordable and comprehensive learning
+                 experience to students of classes 6 to 12 and those preparing for JEE and NEET exams. 
+                 We also provide extensive NCERT solutions, sample papers, NEET, JEE Mains, BITSAT previous year papers, 
+                 which makes us a one-stop solution for all resources.
+                <br>
+                Coachers also caters to over 3.5 million registered students and over 78 lakh+ Youtube subscribers with 4.8 rating on its app. </p>
+                <br>
+                <h2>We stand out because</h2>
+            <p>We successfully provide students with intensive courses by India's top faculties and personal mentors. 
+                Coachers strives to make the learning experience comprehensive and accessible for students of all sections of society.
+                 We believe in empowering every single student who couldn't dream of a good career in engineering and medical field 
+                 earlier.</p>
+                <br>
+        <div class="comment-box">
+            <h3>leave a comment</h3>
+
+            <form class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter email">
+                <textarea rows="5" placeholder="Your comment"></textarea>
+                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+            </form>
+        </div>
+
+        </div>
+        <div class="blog-right">
+            <h3>Post categories</h3>
+            <div>
+                <span>UPSC</span>
+                <span>200</span>
+            </div>
+            <div>
+                <span>DEFENCE</span>
+                <span>220</span>
+            </div>
+            <div>
+                <span>GATE</span>
+                <span>280</span>
+            </div>
+            <div>
+                <span>GOVT. JOB EXAMS</span>
+                <span>210</span>
+            </div>
+            <div>
+                <span>CLASSES</span>
+                <span>180</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="footer">
+        <h4>Slogan</h4>
+        <p>Coachers - Always Ahead</p>
+        <div class="icons">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p> <i class="fa fa-heart-o"></i></p>
+    </section>
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showMenu(){
+            navlink.style.right = "0";
+        }
+        function hideMenu(){
+            navlink.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
